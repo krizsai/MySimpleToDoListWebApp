@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    background-color: #821d64;
+}
+
+header {
+    background-color: #a1a8b3;
+    color: rgb(9, 6, 7);
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#todo-list {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-todo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+li.completed {
+    background-color: #f0f0f0;
+}
+
+li.completed span:nth-child(2){
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+}
