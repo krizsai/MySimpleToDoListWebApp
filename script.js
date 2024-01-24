@@ -43,8 +43,8 @@ function deleteFromTotalTasks(){
 function updateTotalTasks() {
     const totalTasks = document.getElementById("totalTasks");
     const completedTasks = document.querySelectorAll(".completed").length;
-    // todoCount--;
-    todoCount = todoCount - completedTasks;
+    todoCount--;
+    // todoCount = todoCount - completedTasks;
 
     totalTasks.textContent = todoCount;
 }
