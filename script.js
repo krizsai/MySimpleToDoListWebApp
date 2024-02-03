@@ -17,7 +17,7 @@ function addTodo() {
 
     li.addEventListener("click", function () {
         this.classList.toggle("completed");
-        updateTotalTasks();
+        deleteFromTotalTasks();
     });
 
     todoList.appendChild(li);
@@ -40,14 +40,14 @@ function deleteFromTotalTasks(){
     totalTasks.textContent = todoCount;
 }
 
-function updateTotalTasks() {
-    const totalTasks = document.getElementById("totalTasks");
-    const completedTasks = document.querySelectorAll(".completed").length;
-    // todoCount--;
-    todoCount = todoCount - completedTasks;
+// function updateTotalTasks() {
+//     const totalTasks = document.getElementById("totalTasks");
+//     const completedTasks = document.querySelectorAll(".completed").length;
+//     // todoCount--;
+//     todoCount = todoCount - completedTasks;
 
-    totalTasks.textContent = todoCount;
-}
+//     totalTasks.textContent = todoCount;
+// }
 
 function incrementTotalTasks(){
     const totalTasks = document.getElementById("totalTasks");
