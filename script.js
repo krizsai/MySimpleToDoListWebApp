@@ -52,9 +52,11 @@ function deleteFromTotalTasks(){
 function incrementTotalTasks(){
     const totalTasks = document.getElementById("totalTasks");
     const completedTasks = document.querySelectorAll(".completed").length;
-    todoCount++;
-    todoCount = todoCount - completedTasks;
-
-    totalTasks.textContent = todoCount;    
+    const totalListItems = document.querySelectorAll("#todoList li").length;
+    todoCount = totalListItems - completedTasks;
+    totalTasks.textContent = todoCount;
+    // todoCount++;
+    // todoCount = todoCount - completedTasks;
+    // totalTasks.textContent = todoCount;    
 }
 
